@@ -6,4 +6,6 @@ const util=
 
 	importFiles:paths=>Promise.all(paths.map(x=>fetch(x).then(x=>x.text())))
 }
+util.evt2customEl=({path})=>path.find(x=>(x.tagName||'').match('-'))
+
 export default util
