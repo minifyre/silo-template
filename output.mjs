@@ -1,9 +1,11 @@
 import silo from './input.mjs'
-import v from './node_modules/v/v.mjs'
-silo.output=function(state)
+const
+{config,input,logic,util}=silo,
+{v}=util,
+output=function(state)
 {
 	//generate v-based dom here
+	return []
 }
-const {config,input,logic,output,util}=silo
 
-export default silo
+export default Object.assign(silo,{output})
