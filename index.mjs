@@ -12,9 +12,6 @@ custom.element=class extends silo.viewer
 {
 	constructor(state={})
 	{
-		super(state)
-		let renderer=x=>x
-		this.state=truth(logic(state),(...args)=>renderer(args)).state
-		renderer=v.render(this.shadowRoot,this,output)
+		super(state,silo)
 	}
 }
