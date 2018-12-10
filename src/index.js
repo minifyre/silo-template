@@ -12,11 +12,9 @@ export default silo(async function(initialState,url='/node_modules/custom-elemen
 
 	await util.mkCustomEl(url,'custom-element',custom.element)
 
-
 	truth(state,render)
 })
-
-silo.element=class extends silo.viewer
+silo.element=class extends silo.customElement
 {
 	constructor(state={})
 	{
